@@ -8,6 +8,67 @@
 <body>
     <h1>Les page de Firebase</h1>
 
+    <form class="ajouter">
+        <table>
+            <tr>
+                <td>
+                    <label for="pays">Payes:</label>
+                    <input type="text" name="pays" required />
+                </td>
+                <td>
+                    <label for="pays">Ville:</label>
+                    <input type="text" name="ville" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="capital" id="capital">
+                        <option value="true">Est la capitale</option>
+                        <option value="false">N'est pas la capitale</option>
+                    </select>
+                </td>
+                <td>
+                    <button>Nouvelle ville</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <hr><hr>
+    <form class="delete">
+        <label for="id">ID du document</label>
+        <input type="text" name="id" required>
+        <button>supprimer cette ville</button>
+    </form>
+    <hr><hr>
+    <form class="update">
+        <label for="id">ID du document a mettre a jour</label>
+        <input type="text" name="id" required>
+        <table>
+            <tr>
+                <td>
+                    <label for="pays">Payes:</label>
+                    <input type="text" name="pays" required />
+                </td>
+                <td>
+                    <label for="pays">Ville:</label>
+                    <input type="text" name="ville" required />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="capital" id="capital">
+                        <option value="true">Est la capitale</option>
+                        <option value="false">N'est pas la capitale</option>
+                    </select>
+                </td>
+                <td>
+                    <button>mettre a jour cette ville</button>
+                </td>
+            </tr>
+        </table>
+       
+    </form>
+
     <script src="bundle.js"></script>
 </body>
 </html>
